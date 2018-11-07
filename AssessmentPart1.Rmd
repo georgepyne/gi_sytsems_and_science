@@ -2,7 +2,7 @@
 title: "GI Systems and Science Assignment 1"
 author: "George Pyne"
 output: 
-  htlm_document:
+  html_document:
     html_preview: true
 always_allow_html: yes
      
