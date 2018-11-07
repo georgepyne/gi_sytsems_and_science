@@ -1,6 +1,6 @@
 ---
 title: "GI Systems and Science Assignment 1"
-author: "George Pyne"
+author: "Student Number: 18111440"
 output: html_document
  
 ---
@@ -23,7 +23,7 @@ Economic      | Social           | Participation | Environmental      | Health
 Unemployment  | Graduation       | Voter rates   | Community places   | Mortality
 Low Income    | Marginalisation  |               | Walkability        | Mental health 
 State support | Higher education |               | Health food access | Hospitalisation     
-              |                  |               |Green space         | Diabetes
+              |                  |               | Green space        | Diabetes
 
 Python’s pandas and geopandas packages were used to: clean, format and merge Toronto’s neighbourhood shapefile with the NES data. Both GI Systems then classified 5 Jenks quintiles based on the Toronto NES data. QGIS mapped these quintiles onto a basemap of the Toronto area by creating a level of transparency of the NES layer. Whereas R plotted the same NES quintiles on an interactive leaflet map. This map object was then assigned a polygon overlay with hover functionality – the Neighbourhood name and NES is presented when a mouse is hovered over each polygon.
 
@@ -148,7 +148,6 @@ Tranmer, M. and Steel, D.G., 1998. Using census data to investigate the causes o
 
 ## Appendex A - Python Code for Data Preperation:
 
-knit_engines$set("Python")
 
 ```{Python}
 import pandas as pd # To handle csv
