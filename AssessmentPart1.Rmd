@@ -111,19 +111,14 @@ show(map)
 
 ## Discussion
 
-Code-based GIS better enables reproducible research which provides: results comparisons, documentation for methodologies and results to be updated (Brunsdon, 2016). This enables peer-to-peer GIS knowledge sharing. Harris (2016) argues this empowers users to: see the code behind the analysis, borrow or adapt existing code and share their own code. Arribas-Bel (2014) coins this as ‘interdisciplinary glue’ – where there is even a cross pollination of methods from non-GIS disciplines. Whereas, QGIS (used in this study) is an open-source software, the software’s methods aren’t as easily shared. Documentation is advisable, otherwise the benefits of reproducibility and peer review are lost (Miller and Goodchild, 2015).
+Code-based GIS better enables reproducible research which provides: results comparisons, documentation for methodologies and results to be updated (Brunsdon, 2016). This enables peer-to-peer GIS knowledge sharing. Harris (2016) argues this empowers users to: see the code behind the analysis, borrow or adapt existing code and share their own code. Arribas-Bel (2014) coins this as ‘interdisciplinary glue’ – where there is even a cross pollination of methods from non-GIS disciplines. Whereas QGIS (used in this study) is an open-source software, the software’s methods aren’t as easily shared. Documentation is advisable, otherwise the benefits of reproducibility and peer review are lost (Miller and Goodchild, 2015).
 
 However, code-based GIS has a steeper learning curve, it can be confusing as there are multiple ways of achieving the same objective (Harris, 2016). Brunsdon and Singleton (2015) argue this is a pragmatic problem of code-based GIS - it assumes users have adequate computational power and knowledge of programming.
 
-GUI-based GIS is limited in its output formats; the interactive hover tool and zoom function of Figure 2.A is a distinct advantage of code-based GIS over GUI-based maps. GUI-GIS is traditionally more adept at cartographic conventions (see the legend, scale bar and north arrow; Figure 1). R however still provided a means of including a legend and interactive scale bar.
+GUI-based GIS is limited in its output formats; the interactive hover tool and zoom function of Figure 2.B is a distinct advantage of code-based GIS over GUI-based maps. GUI-GIS is traditionally more adept at cartographic conventions (see the legend, scale bar and north arrow; Figure 1). R however still provided a means of including a legend and interactive scale bar.
 
 Harris et al. (2017) summarised the history of both GUI and code-based GIS and concluded that two major limitations have remained for both. These are: (i) the ecological fallacy - when results from statistical analysis at one level of analysis are wrongly assumed to apply to another (Tranmer and Steel, 1998); and (ii) modifiable areal unit problem - a change in statistical results occurs with an alteration of the scale or aggregation criterion of areal units (Arbia and Petrarca, 2011). 
 
-
- 
-## Conclusion
-
-Brunsdon and Singleton (2015) argue that currently code and GUI-based GIS are generally interchangeable which will likely continue - however the traditional user base of GUI-based GIS will be affected as open-source code matures. This study generally reiterated this viewpoint, but critically it only provided two similar maps. Further research is suggested to compare the two software using more advanced spatial analysis techniques.
 
 
 ## References
