@@ -18,13 +18,13 @@ This study used Toronto’s Open Data Initiative which follows a trend of public
 
 __Table 1 - Indicators udes to create Neighbourhood Equity Scores (SPAR City of Toronto, 2014)__
 
-Economic      | Social           | Participation | Environmental      | Health
-------------- | ---------------- | ------------- | ------------------ | ---------------
-Unemployment  | Graduation       | Voter rates   | Community places   | Mortality
-Low Income    | Marginalisation  |               | Walkability        | Mental health 
-State support | Higher education |               | Health food access | Hospitalisation     
-              |                  |               | Green space        | Diabetes
-
+|Economic           | Social             | Participation      | Environmental      | Health            |
+|------------------ | ------------------ | ------------------ | ------------------ | ----------------- |
+|Unemployment       | Graduation         | Voter rates        | Community places   | Mortality         |
+|Low Income         | Marginalisation    |                    | Walkability        | Mental health     |
+|State support      | Higher education   |                    | Health food access | Hospitalisations  |    
+|                   |                    |                    | Green space        | Diabetes          |
+|                   |                    |                    |                    |                   |
 Python’s pandas and geopandas packages were used to: clean, format and merge Toronto’s neighbourhood shapefile with the NES data. Both GI Systems then classified 5 Jenks quintiles based on the Toronto NES data. QGIS mapped these quintiles onto a basemap of the Toronto area by creating a level of transparency of the NES layer. Whereas R plotted the same NES quintiles on an interactive leaflet map. This map object was then assigned a polygon overlay with hover functionality – the Neighbourhood name and NES is presented when a mouse is hovered over each polygon.
 
 ## Results
@@ -146,7 +146,7 @@ Social Policy Analysis and Research City of Toronto (2014). _TSNS 2020 NEIGHBOUR
 
 Tranmer, M. and Steel, D.G., 1998. Using census data to investigate the causes of the ecological fallacy. _Environment and Planning A_, 30(5), pp.817-831.
 
-## Appendex A - Python Code for Data Preperation:
+## Appendix A - Python Code for Data Preperation:
 
 
 ```{Python}
@@ -171,7 +171,7 @@ if not os.path.exists(shp_path): # Don't rewrite file if it exists already
 
 ```
 
-## Appendex B - R Code for Figure 2:
+## Appendix B - R Code for Figure 2:
 
 
 ```{R eval=FALSE}
