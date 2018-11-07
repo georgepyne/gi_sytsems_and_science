@@ -22,7 +22,8 @@ Economic      | Social           | Participation | Environmental      | Health
 ------------- | ---------------- | ------------- | ------------------ | ---------------
 Unemployment  | Graduation       | Voter rates   | Community places   | Mortality
 Low Income    | Marginalisation  |               | Walkability        | Mental health 
-State support | Higher education |               | Health food access | Hospitalisation               |                  |               | Green space        | Diabetes
+State support | Higher education |               | Health food access | Hospitalisation     
+              |                  |               |Green space         | Diabetes
 
 Python’s pandas and geopandas packages were used to: clean, format and merge Toronto’s neighbourhood shapefile with the NES data. Both GI Systems then classified 5 Jenks quintiles based on the Toronto NES data. QGIS mapped these quintiles onto a basemap of the Toronto area by creating a level of transparency of the NES layer. Whereas R plotted the same NES quintiles on an interactive leaflet map. This map object was then assigned a polygon overlay with hover functionality – the Neighbourhood name and NES is presented when a mouse is hovered over each polygon.
 
@@ -115,11 +116,13 @@ Code-based GIS has a steeper learning curve, and it can be confusing as there ar
 Whilst QGIS (used in this study) is an open-source software, the methods used aren’t easily sharable. Documentation is advisable, otherwise the benefits of reproducibility and peer review are lost (Miller and Goodchild, 2015). GUI-based GIS is limited in its output formats; the interactive hover tool and zoom function of Figure 2.A is a distinct advantage of code-based GIS over GUI-based maps. GUI-GIS is traditionally more adept at cartographic conventions (see the legend, scale bar and north arrow; Figure 1). R however still provided a means of including a legend and interactive scale bar.
 
 Harris et al. (2017) summarised the history of both GUI and code-based GIS and concluded that two major limitations have remained. These are: (i) the ecological fallacy - when results from statistical analysis at one level of analysis are wrongly assumed to apply to another (Tranmer and Steel, 1998); and (ii) modifiable areal unit problem - a change in statistical results with an alteration of the scale of areal units or the aggregation criterion (Arbia and Petrarca, 2011). 
+
  
 
 ## Conclusion
 
 Brunsdon and Singleton (2015) argue that currently code and GUI-based GIS are generally interchangeable which will likely continue - however the traditional user base of GUI-based GIS will be affected as open-source code matures. This study generally reiterated this viewpoint, but critically it only provided two similar maps. Further research is suggested to compare the two systems using more advanced spatial analysis techniques.
+
 
 ## References
 
