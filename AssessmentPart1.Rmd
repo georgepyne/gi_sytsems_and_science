@@ -1,8 +1,11 @@
 ---
 title: "GI Systems and Science Assignment 1"
 author: "George Pyne"
-output: github_document
+output: 
+  github_document:
+    html_preview: true
 always_allow_html: yes
+     
 ---
 
 ```{r setup, include=FALSE}
@@ -45,8 +48,9 @@ __Figure 2.A - Code-based (static) Map of Toronto Neighbourhood Equity Scores__
 
 In Figure 2.B the user can explore specific values by hovering a mouse over each polygon zone – this enables more region-specific measures of NES.
 
+
 __Figure 2.B - Code-based (interactive) Map of Toronto Neighbourhood Equity Scores__ 
-```{r map, echo = FALSE, message = FALSE}
+```{r leaflet, echo = FALSE, message = FALSE}
 library(leaflet)
 library(shinyjs)
 library(plotly)
@@ -69,13 +73,9 @@ eqMapSF <-read_shape(shp_link, as.sf = TRUE) # Read the link to shapefile
 breaks<-classIntervals(eqMapSF$EqScore, n=5, style="jenks") # Create 5 Jenks quintiles
 breaks <- breaks$brks
 
-
-
 eqMap <- eqMapSF %>%
   st_transform(crs = 4326) %>% #Transorm CRS for leaflet mapping
   as("Spatial")
-
-
 
 pal <- colorBin(palette = "RdYlGn", # create color palette based on quintiles
                 domain = eqMap$EqScore,
@@ -106,6 +106,7 @@ map <- leaflet(eqMap) %>% # Make a leaflet object
   addScaleBar(map, position = c("bottomleft"), # add scalebar to our leaflet object
               options = scaleBarOptions()) 
 
+show(map)
 
 ```
 
