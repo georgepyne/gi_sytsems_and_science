@@ -67,7 +67,7 @@ library(geojsonio)
 library(methods)
 library(OpenStreetMap)
 
-shp_link <- "/Users/GeorgePyne/Documents/CASA/GI Systems and Science/assignment_1/neighbourhoods_planning_areas_wgs84/Toronto_Equity.shp"
+shp_link <- "neighbourhoods_planning_areas_wgs84/Toronto_Equity.shp"
 eqMapSF <-read_shape(shp_link, as.sf = TRUE) # Read the link to shapefile
 breaks<-classIntervals(eqMapSF$EqScore, n=5, style="jenks") # Create 5 Jenks quintiles
 breaks <- breaks$brks
