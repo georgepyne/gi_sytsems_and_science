@@ -3,6 +3,7 @@ title: "GI Systems and Science Assignment 1"
 author: "Student Number: 18111440"
 output: html_document
  
+ 
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
