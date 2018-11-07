@@ -25,7 +25,8 @@ __Table 1 - Indicators udes to create Neighbourhood Equity Scores (SPAR City of 
 |State support      | Higher education   |                    | Health food access | Hospitalisations  |    
 |                   |                    |                    | Green space        | Diabetes          |
 |                   |                    |                    |                    |                   |
-Python’s pandas and geopandas packages were used to: clean, format and merge Toronto’s neighbourhood shapefile with the NES data. Both GI Systems then classified 5 Jenks quintiles based on the Toronto NES data. QGIS mapped these quintiles onto a basemap of the Toronto area by creating a level of transparency of the NES layer. Whereas R plotted the same NES quintiles on an interactive leaflet map. This map object was then assigned a polygon overlay with hover functionality – the Neighbourhood name and NES is presented when a mouse is hovered over each polygon.
+Python’s pandas and geopandas packages were used to: clean, format and merge Toronto’s neighbourhood shapefile with the NES data. Both GI Systems then classified 5 natural breaks (Jenks) quintiles based on the Toronto NES data. QGIS mapped these quintiles onto a basemap of the Toronto area by creating a level of transparency of the NES layer. Whereas R plotted the same NES quintiles on an interactive leaflet map. This map object was then assigned a polygon overlay with hover functionality – the Neighbourhood name and NES is presented when a mouse is hovered over each polygon.
+
 
 ## Results
 
