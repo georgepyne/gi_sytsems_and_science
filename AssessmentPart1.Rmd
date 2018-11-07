@@ -2,7 +2,7 @@
 title: "GI Systems and Science Assignment 1"
 author: "George Pyne"
 output: 
-  github_document:
+  htlm_document:
     html_preview: true
 always_allow_html: yes
      
@@ -144,7 +144,7 @@ Harris, R., O’Sullivan, D., Gahegan, M., Charlton, M., Comber, L., Longley, P.
 
 Miller, H.J. and Goodchild, M.F., 2015. Data-driven geography. _GeoJournal_, 80(4), pp.449-461.
 
-Social Policy Analysis and Research City of Toronto (2014). TSNS 2020 NEIGHBOURHOOD EQUITY INDEX Methodological Documentation. [online] Toronto, pp.5-6. Available at: https://www.toronto.ca/wp-content/uploads/2017/11/97eb-TSNS-2020-NEI-equity-index-methodology-research-report-backgroundfile-67350.pdf [Accessed 5 Nov. 2018].
+Social Policy Analysis and Research City of Toronto (2014). _TSNS 2020 NEIGHBOURHOOD EQUITY INDEX Methodological Documentation_. [online] Toronto, pp.5-6. Available at: https://www.toronto.ca/wp-content/uploads/2017/11/97eb-TSNS-2020-NEI-equity-index-methodology-research-report-backgroundfile-67350.pdf [Accessed 5 Nov. 2018].
 
 Tranmer, M. and Steel, D.G., 1998. Using census data to investigate the causes of the ecological fallacy. _Environment and Planning A_, 30(5), pp.817-831.
 
