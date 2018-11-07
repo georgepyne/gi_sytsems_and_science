@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction
 
-This study will compare a traditional GUI-based GIS software(QGIS) and a code-based GIS software (R) – by creating two similar maps and comparing each workflow. This study will provide: an outline of the data and methodologies used, the results of both GIS software, a discussion on the benefits and drawbacks of each GIS software and conclude the findings of this study.
+This study will compare a traditional GUI-based GIS software (QGIS) and a code-based GIS software (R) by creating two similar maps and comparing each workflow. This study will provide: an outline of the data and methodologies used, the results of both GIS software, a discussion on the benefits and drawbacks of each GIS software and conclude the findings of this study.
 
 ## Data and Methodology
 
