@@ -13,12 +13,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction
 
-This study seeks to compare a traditional GUI-based GIS (QGIS) and code-based GIS (R) – by creating two similar maps and comparing each workflow and output. This study will provide: the data and methodological workflow used for both GI Systems, the results of both GI Systems, a discussion on the benefits and drawbacks of each GI Systems conclude the findings of this study.
+This study will compare a traditional GUI-based GIS (QGIS) and a code-based GIS (R) – by creating two similar maps and comparing each workflow. This study will provide: an outline of the data and methodological workflow used, the results of both GI Systems, a discussion on the benefits and drawbacks of each GI Systems and conclude the findings of this study.
 
 
 ## Data and Methodology
 
-The data used in this study was sourced from Toronto’s Open Data Initiative. This initiative follows a trend of public data becoming more accessible, creating a new GIS paradigm of sharing and reproducibility (Brunsdon and Singleton, 2015). This opening of government is a trend of big data which is helping researchers understand cities in more microscopic detail  (Arribas-Bel, 2014). A shapefile dividing Toronto into 140 different neighbourhood zones was used as the basis for choropleth mapping. Toronto’s Neighbourhood Equity Scores (NES) were then appended – these provide a score of social equity between 0-100 (100 being most socially equitable) and were formulated by the indicators listed in Table 1.
+This study used Toronto’s Open Data Initiative which follows a trend of public data becoming more accessible - creating a new GIS paradigm of sharing and reproducibility (Brunsdon and Singleton, 2015). This trend of opening government data is a trend of big data which is helping researchers understand cities in more microscopic detail (Arribas-Bel, 2014). A shapefile dividing Toronto into 140 different neighbourhood zones was used as the basis for choropleth mapping. Toronto’s Neighbourhood Equity Scores (NES) were then appended – these provide a score of social equity between 0-100 (100 being most socially equitable) and were formulated by the indicators listed in Table 1.
+
 
 __Table 1 - Indicators udes to create Neighbourhood Equity Scores (SPAR City of Toronto, 2014)__
 
@@ -29,7 +30,7 @@ Low Income    | Marginalisation  |               | Walkability        | Mental h
 State support | Higher education |               | Health food access | Hospitalisation 
 Content Cell  | Content Cell     |               | Green space        | Diabetes
 
-Python’s pandas and geopandas packages were used to: clean, format and merge Toronto’s neighbourhood shapefile with the NES data. This was then exported for mapping in QGIS and R. Both GI Systems classified 5 Jenks quintiles based on the Toronto NES. QGIS then mapped these quintiles onto a web layer basemap of Toronto by creating a level of transparency of the NES layer. Whereas R plotted the same NES quintiles on an interactive leaflet map. This map object was then assigned a polygon overlay with hover functionality – the Neighbourhood name and NES is presented when a mouse is hovered over each polygon.
+Python’s pandas and geopandas packages were used to: clean, format and merge Toronto’s neighbourhood shapefile with the NES data. Both GI Systems then classified 5 Jenks quintiles based on the Toronto NES data. QGIS mapped these quintiles onto a basemap of the Toronto area by creating a level of transparency of the NES layer. Whereas R plotted the same NES quintiles on an interactive leaflet map. This map object was then assigned a polygon overlay with hover functionality – the Neighbourhood name and NES is presented when a mouse is hovered over each polygon.
 
 ## Results
 
@@ -114,16 +115,16 @@ show(map)
 
 Code-based GIS provides more reproducible research, this enables: results comparisons, documentation for methodologies and results to be updated (Brunsdon, 2016). This enables peer-to-peer GIS knowledge sharing. Harris (2016) highlights this enables users to: see the code behind the analysis, borrow or adapt existing code and to share their own code. Arribas-Bel (2014) coins this as ‘interdisciplinary glue’ – where there is even a cross pollination of methods from other fields. 
 
-Code-based GIS has a steeper learning curve, it is not immediately clear what is being executed and it can be confusing as there are multiple ways of achieving the same objective (Harris, 2016). Brunsdon and Singleton (2015) argue a pragmatic problem of code-based GIS is it assumes users have adequate knowledge of programming and computational power.
+Code-based GIS has a steeper learning curve, and it can be confusing as there are multiple ways of achieving the same objective (Harris, 2016). Brunsdon and Singleton (2015) argue this is a pragmatic problem of code-based GIS - it assumes users have adequate computational power and knowledge of programming.
 
-Whilst the GUI-based GIS used in this study (QGIS) is an open-source software, the methods used aren’t easily documented. Documentation is advisable, otherwise the benefits of reproducibility and peer review are lost (Miller and Goodchild, 2015). GUI-based GIS is largely limited in mapping formats, but it is however adept at cartographic conventions (for example - the legend, scale bar and north arrow; see Figure 1). R however still provided a means of including a legend and interactive scale bar. The interactive hover tool and zoom function of Figure 2.A is a distinct advantage of code-based maps over GUI-based maps.
+Whilst QGIS (used in this study) is an open-source software, the methods used aren’t easily sharable. Documentation is advisable, otherwise the benefits of reproducibility and peer review are lost (Miller and Goodchild, 2015). GUI-based GIS is limited in its output formats; the interactive hover tool and zoom function of Figure 2.A is a distinct advantage of code-based GIS over GUI-based maps. GUI-GIS is traditionally more adept at cartographic conventions (see the legend, scale bar and north arrow; Figure 1). R however still provided a means of including a legend and interactive scale bar.
 
-Harris et al. (2017) have monitored thehistory of both GUI and code-based GIS and concluded that two major limitations have remained. These are: (i) the ecological fallacy - when results from statistical analysis at one level of analysis are wrongly assumed to apply to another (Tranmer and Steel, 1998); and (ii) modifiable areal unit problem - a change in statistical results with an alteration of the scale of areal units or the aggregation criterion (Arbia and Petrarca, 2011). 
-
+Harris et al. (2017) summarised the history of both GUI and code-based GIS and concluded that two major limitations have remained. These are: (i) the ecological fallacy - when results from statistical analysis at one level of analysis are wrongly assumed to apply to another (Tranmer and Steel, 1998); and (ii) modifiable areal unit problem - a change in statistical results with an alteration of the scale of areal units or the aggregation criterion (Arbia and Petrarca, 2011). 
 
 ## Conclusion
 
-Brunsdon and Singleton (2015) argue that currently code and GUI-based GIS are generally interchangeable which will likely continue - however the traditional user base of GUI-based GIS will be affected as open-source code matures. This study generally echoed this viewpoint, but critically it only provided two similar maps. Further research is suggested to compare the two systems using more advanced spatial analysis techniques.
+Brunsdon and Singleton (2015) argue that currently code and GUI-based GIS are generally interchangeable which will likely continue - however the traditional user base of GUI-based GIS will be affected as open-source code matures. This study generally reiterated this viewpoint, but critically it only provided two similar maps. Further research is suggested to compare the two systems using more advanced spatial analysis techniques.
+
 
 
 ## References
@@ -150,10 +151,7 @@ Tranmer, M. and Steel, D.G., 1998. Using census data to investigate the causes o
 
 ## Appendex A - Python Code for Data Preperation:
 
-
 knit_engines$set("Python")
-
-
 
 ```{Python}
 import pandas as pd # To handle csv
