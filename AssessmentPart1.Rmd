@@ -16,7 +16,8 @@ This study will compare a traditional GUI-based GIS software (QGIS) and a code-b
 
 This study used Toronto’s Open Data Initiative which follows a trend of public data becoming more accessible - creating a new GIS paradigm of sharing and reproducibility (Brunsdon and Singleton, 2015). This trend of opening government data is a trend of big data which is helping researchers understand cities in more microscopic detail (Arribas-Bel, 2014). A shapefile dividing Toronto into 140 different neighbourhood zones was used as the basis for choropleth mapping. Toronto’s Neighbourhood Equity Scores (NES) were then appended – these provide a score of social equity between 0-100 (100 being most socially equitable) and were formulated by the indicators listed in Table 1.
 
-__Table 1 - Indicators udes to create Neighbourhood Equity Scores (SPAR City of Toronto, 2014)__
+
+__Table 1 - Indicators used to create Neighbourhood Equity Scores (SPAR City of Toronto, 2014)__
 
 |Economic           | Social             | Participation      | Environmental      | Health            |
 |------------------ | ------------------ | ------------------ | ------------------ | ----------------- |
@@ -28,11 +29,9 @@ __Table 1 - Indicators udes to create Neighbourhood Equity Scores (SPAR City of 
 
 Python’s pandas and geopandas packages were used to: clean, format and merge Toronto’s neighbourhood shapefile with the NES data. Both GIS software classified 5 natural breaks (Jenks) quintiles based on the Toronto NES data. QGIS mapped these quintiles onto a basemap of the Toronto area by creating a level of transparency of the NES layer. Whereas R plotted the same NES quintiles on an interactive leaflet map. This map object was then assigned a polygon overlay with hover functionality – the Neighbourhood name and NES is presented when a mouse is hovered over each polygon.
 
-
-
 ## Results
 
-Figure 1 shows the NES map created in the GUI-based system. 
+Figure 1 shows the NES map created in the GUI-based software. 
 
 
 __Figure 1 -  GUI-based Map of Toronto Neighbourhood Equity Scores__
@@ -112,13 +111,13 @@ show(map)
 
 ## Discussion
 
-Code-based GIS provides more reproducible research which enables: results comparisons, documentation for methodologies and results to be updated (Brunsdon, 2016). This enables peer-to-peer GIS knowledge sharing. Harris (2016) highlights this enables users to: see the code behind the analysis, borrow or adapt existing code and to share their own code. Arribas-Bel (2014) coins this as ‘interdisciplinary glue’ – where there is even a cross pollination of methods from other fields. 
+Code-based GIS better enables reproducible research which provides: results comparisons, documentation for methodologies and results to be updated (Brunsdon, 2016). This enables peer-to-peer GIS knowledge sharing. Harris (2016) argues this empowers users to: see the code behind the analysis, borrow or adapt existing code and share their own code. Arribas-Bel (2014) coins this as ‘interdisciplinary glue’ – where there is even a cross pollination of methods from non-GIS disciplines. Whereas, QGIS (used in this study) is an open-source software, the software’s methods aren’t as easily shared. Documentation is advisable, otherwise the benefits of reproducibility and peer review are lost (Miller and Goodchild, 2015).
 
-Code-based GIS has a steeper learning curve, and it can be confusing as there are multiple ways of achieving the same objective (Harris, 2016). Brunsdon and Singleton (2015) argue this is a pragmatic problem of code-based GIS - it assumes users have adequate computational power and knowledge of programming.
+However, code-based GIS has a steeper learning curve, it can be confusing as there are multiple ways of achieving the same objective (Harris, 2016). Brunsdon and Singleton (2015) argue this is a pragmatic problem of code-based GIS - it assumes users have adequate computational power and knowledge of programming.
 
-Whilst QGIS (used in this study) is an open-source software, the methods used aren’t easily sharable. Documentation is advisable, otherwise the benefits of reproducibility and peer review are lost (Miller and Goodchild, 2015). GUI-based GIS is limited in its output formats; the interactive hover tool and zoom function of Figure 2.A is a distinct advantage of code-based GIS over GUI-based maps. GUI-GIS is traditionally more adept at cartographic conventions (see the legend, scale bar and north arrow; Figure 1). R however still provided a means of including a legend and interactive scale bar.
+GUI-based GIS is limited in its output formats; the interactive hover tool and zoom function of Figure 2.A is a distinct advantage of code-based GIS over GUI-based maps. GUI-GIS is traditionally more adept at cartographic conventions (see the legend, scale bar and north arrow; Figure 1). R however still provided a means of including a legend and interactive scale bar.
 
-Harris et al. (2017) summarised the history of both GUI and code-based GIS and concluded that two major limitations have remained. These are: (i) the ecological fallacy - when results from statistical analysis at one level of analysis are wrongly assumed to apply to another (Tranmer and Steel, 1998); and (ii) modifiable areal unit problem - a change in statistical results with an alteration of the scale of areal units or the aggregation criterion (Arbia and Petrarca, 2011). 
+Harris et al. (2017) summarised the history of both GUI and code-based GIS and concluded that two major limitations have remained for both. These are: (i) the ecological fallacy - when results from statistical analysis at one level of analysis are wrongly assumed to apply to another (Tranmer and Steel, 1998); and (ii) modifiable areal unit problem - a change in statistical results occurs with an alteration of the scale or aggregation criterion of areal units (Arbia and Petrarca, 2011). 
 
 
  
